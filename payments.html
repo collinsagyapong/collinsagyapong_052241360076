@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments of Dues</title>
+    <style>
+        #logo {
+            width: 150px;
+            height: auto;
+            margin: 0.5px;
+            display:inline;
+        }
+    </style>
+    <style>
+
+        label {
+            display:block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 100px;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #CCC;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="_custom.css">
+    <img id="logo" src="KSTU 2.png" alt="School Logo" ><br>
+</head>
+<body>
+    <header>
+        <h1>Payments of Dues</h1>
+        <form action="submit.php" method="POST">
+            <label for="student_id">Student ID:</label>
+            <input type="text" id="student_id" name="student_id" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+
+            <label for="amount_due">Amount Due</label>
+            <input type="number" id="amount_due" name="amount due" required>
+
+            <label for="gender" style="color: whitesmoke">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="year" style="color: whitesmoke">Year of Study:</label>
+            <select id="year" name="year">
+                <option value="1">Level 100</option>
+                <option value="2">Level 200</option>
+                <option value="3">Level 300</option>
+                <option value="4">Level 400</option>
+            </select>
+
+            <label for="status">Status</label>
+            <select id="status" name="status">
+                <option value="pending">Pending</option>
+                <option value="paid">Paid</option>
+            </select>
+
+            <input type="submit" value="Submit">
+
+
+              </form>
+        <nav>
+            <ul>
+                <li><a href="index.html" style="color:bisque"><button>Home</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Add payments content here-->
+    </main>
+    
+    <footer>
+       
+        <p>&copy; 2024 Alex Nti Amofah's Project</p>
+        
+    </footer>
+
+    
+</body>
+</html>

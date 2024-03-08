@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Forms</title>
+    <style>
+        #logo {
+            width: 150px;
+            height: auto;
+            margin: 0.5px;
+            display:inline;
+        }
+    </style>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header, footer {
+            background-color: #baca24;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        main {
+            margin: 50px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        form input[type=text], form input[type=date], form input[type=tel], form select, form input[type=file] {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        label {
+            display:block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 100px;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #CCC;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="_custom.css">
+    <img id="logo" src="KSTU 2.png" alt="School Logo">
+</head>
+<body>
+   
+    <header>
+       
+        <h1>Registration Forms</h1>
+       
+    </header>
+    <main>
+
+        <div class="container">
+        <form action="submit_form_here" method="POST" enctype="multipart/form-data">
+            <label for="studentNumber" style="color:antiquewhite">Student Number</label>
+            <input type="text" name="studentNumber" autocomplete="studentNumber" required><br>
+
+            <label for="firstName" style="color: whitesmoke">First Name:</label>
+            <input type="text" id="firstName" name="firstName" autocomplete="firstName" required><br>
+
+            <label for="lastName" style="color: whitesmoke">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" autocomplete="LastName" required><br>
+
+            <label for="date_of_birth" style="color: whitesmoke">Date of Birth:</label>
+            <input type="date" id="date_of_birth" name="date_of_birth" autocomplete="date_of_birth" required><br>
+
+            <label for="gender" style="color: whitesmoke">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="year" style="color: whitesmoke">Year of Study:</label>
+            <select id="year" name="year">
+                <option value="1">Level 100</option>
+                <option value="2">Level 200</option>
+                <option value="3">Level 300</option>
+                <option value="4">Level 400</option>
+            </select>
+
+            <label for="faculty" style="color: whitesmoke">Faculty:</label>
+            <select name="department">
+                <option value="faculty1">Faculty of Applied Science and Technology</option>
+                <option value="faculty2">Business School</option>
+                <option value="faculty3">Faculty of Built and Natural Environment</option>
+                <option value="faculty4">Faculty of Creative Arts and Technology</option>
+                <option value="faculty5">Faculty of Engineering and Technology</option>
+                <option value="faculty6">Faculty of Enterpreneurship and Enterprise Development</option>
+                <option value="faculty7">Faculty of Health Sciences</option>
+
+
+            </select>   
+
+            <label for="department" style="color: whitesmoke">Department:</label>
+            <select name="department">
+                <option value="dept1">Department of Computer Science</option>
+                <option value="dept2">Department of Statistical Science</option>
+                <option value="dept3">Department of Hotel, Catering and Institutional Management</option>
+                <option value="dept4">Department of Food Technology</option>
+                <option value="dept5">Department of Information Science</option>
+                <option value="dept6">Department of Mathematical Science</option>
+                <option value="dept1">Department of Enterpreneurship and Finance</option>
+                <option value="dept2">Department of Marketing</option>
+                <option value="dept3">Department of Procurement and Supply Chain Management</option>
+                <option value="dept4">Department of Secretaryship and Management Studies</option>
+                <option value="dept5">Department of Banking Technology and Finance</option>
+                <option value="dept6">Department of Accountancy and Accounting Information Systems</option>
+                <option value="dept5">Department of Liberal Studies</option>
+                <option value="dept6">Department of Interior Design and Materials Technology</option>
+                <option value="dept5">Department of Estate Management</option>
+                <option value="dept6">Department of Building Technology</option>
+                <option value="dept5">Center of renewable Energy and Energy Efficiency (CREK)</option>
+                <option value="dept6">Department of Oil and Gas Engineering</option>
+                <option value="dept5">Department of Automotive and Agricultural Mechanization Engineering</option>
+                <option value="dept6">Department of Energy and Environment Engineering</option>
+                <option value="dept5">Department of Mechanical Engineering</option>
+                <option value="dept6">Department of Electrical/Electronic Engineering</option>
+                <option value="dept5">Department of Civil Engineering</option>
+                <option value="dept6">Department of Chemical Engineering</option>
+                <option value="dept5">Department of Laboratory Technology</option>
+                <option value="dept6">Department of Pharmaceutical Science</option>
+               
+            </select><br>
+            
+            <label for="telephoneNumber" style="color: whitesmoke">Telephone:</label><br>
+            <input type="tel" id="telephoneNumber" name="telephoneNumber"autocomplete="telephoneNumber" required><br>
+
+            <label for="address" style="color: whitesmoke">Address:</label><br>
+            <input type="text" id="address" name="address"autocomplete="address" required><br>
+
+            <p style="color:bisque">Upload a picture</p>
+            <input type="file" id="upload a picture" name="picture"><br>
+
+            <label for="email" style="color: whitesmoke">Email:</label><br>
+            <input type="text" id="email" name="email"autocomplete="email" required><br>
+
+            <label for="password" style="color: whitesmoke">Password:</label><br>
+            <input type="password" id="password" name="password" autocomplete="new-password" required><br>
+
+            <labe for="confirm_password" style="color: whitesmoke">Confirm Password:</labe><br>
+            <input type="password" id="confirm_password" name="confirm_password" autocomplete="new-password" required><br>
+
+            <input type="submit" value="Register" >
+        </form>
+        </div>
+        <p style="color:aquamarine">Already have an account?<a href="#" id="signin-link" style="color:beige"> Sign In</a></p>
+        <!--sign in form-->
+
+        <form id="signin-form" action="signin.php" method="POST">
+            <label for="signin_email" style="color: whitesmoke">Email:</label>
+            <input type="email" id="signin_email" name="signin_email" autocomplete="email" required><br><br>
+
+            <label for="sign_password" style="color: whitesmoke">Password:</label>
+            <input type="password" id="signin_password" name="signin_password" autocomplete="new-password" required><br><br>
+
+            <input type="submit" value="Sign In">
+
+        </form>
+        <script>
+            document.getElementById('signin-link').addEventListener('click', function() {
+                document.getElementById('signin-form').style.display = 'block';
+            });
+
+            document.getElementById("registration").addEventListener("submit" , function(event){
+                evnet.preventDefault();
+
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+                var gender = document.getElementById("gender").value;
+                var year = document.getElementById("year").value;
+
+                alert("Name:" + name +"\nEmail: " + email + "\nPassword: " + password + "\nGender:" + gender + "\nYear of Study:" + year);
+            });
+        </script>
+         
+    </main>
+    <nav>
+        <ul>
+            <li><a href="index.html" style="color:antiquewhite"><button>Home</button></a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
